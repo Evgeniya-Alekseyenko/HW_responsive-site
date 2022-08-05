@@ -3,23 +3,32 @@
     --secondary-color: #f5f2fe;
     --hover-color: #f5f768;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --links-color: purple;
 }
 
 body {
     margin: 60px auto;
     max-width: 800px;
     background: var(--secondary-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 h1,
 h2,
 h3 {
+    font-family: 'Roboto';
     text-align: center;
     margin: 0;
 }
 
 h1 {
     font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 h2 {
@@ -58,6 +67,11 @@ p {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .contact-link:hover {
@@ -70,6 +84,11 @@ p {
 .about-link {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .about-link:hover {
@@ -80,15 +99,6 @@ p {
     color: var(--primary-color);
     text-align: center;
     display: block;
-}
-
-.about-paragraphs {
-    display: flex;
-    margin: 30px 0;
-}
-
-.about-paragraphs p {
-    margin: 10px;
 }
 
 .email-link {
@@ -107,6 +117,11 @@ p {
     background: var(--primary-color);
     box-shadow: 5px 3px 3px var(--primary-color);
     min-width: 250px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .btn:hover {
@@ -126,6 +141,9 @@ p {
 
 .link-weather_app:hover {
     color: var(--hover-color);
+}
+.img-about {
+    margin-top: 50px;
 }
 
 .img-about:hover {
@@ -153,4 +171,23 @@ p {
         margin: 8rem 0 2rem 0;
         font-size: 30px;
     }
+    .contacts {
+        margin-top: 8rem;
+    }
+}
+.fa-instagram,
+.fa-twitter,
+.fa-telegram {
+    color: var(--links-color);
+    font-size: 36px;
+}
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contact-links a {
+    margin: 25px;
 }
