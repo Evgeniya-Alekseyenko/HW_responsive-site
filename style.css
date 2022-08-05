@@ -40,6 +40,10 @@ h3 {
     opacity: 0.7;
 }
 
+.intro {
+    margin: 160px 0;
+}
+
 p {
     background: var(--secondary-color);
     padding: 20px;
