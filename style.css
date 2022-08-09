@@ -5,7 +5,7 @@
 
 :root {
     --primary-color: #6c63ff;
-    --secondary-color: #f5f2fe;
+    --secondary-color: #f9f7fe;
     --p-color: rgba(39, 33, 66, 0.7);
     --hover-color: #f5f768;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -44,8 +44,37 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
-    margin: 10px 0 10px 0;
+    font-size: 36px;
+    margin: 24px 0 10px 0;
+}
+
+.btn {
+    font-family: var(--primary-font-family);
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+}
+
+.collapse {
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.btn-outlined {
+    background-color: #e5e5e5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #6c63ff;
+    color: #6c63ff;
+    text-align: center;
+    padding: 18px 31px;
+    border-radius: 4px;
+}
+
+.btn-outlined a {
+    color: #6c63ff;
 }
 
 .btn-branding {
@@ -57,13 +86,14 @@ h3 {
     padding: 18px 31px;
 }
 
-.btn-branding:hover {
+/* .btn-branding:hover {
     color: var(--hover-color);
-}
+} */
 /* Homepage section */
 
 .intro {
-    margin: 160px 0;
+    /* margin: 160px 0; */
+    background-color: var(--secondary-color);
 }
 
 .navigation-links {
@@ -96,6 +126,8 @@ h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+    width: 150px;
+    text-align: center;
 }
 
 .contact-link:hover {
@@ -113,10 +145,23 @@ h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+    width: 150px;
+    text-align: center;
 }
 
 .about-link:hover {
     background: var(--hover-color);
+}
+
+.home-p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--p-color);
+    padding: 0;
+    /* text-align: center; */
 }
 
 .homepage-link {
@@ -154,8 +199,11 @@ h3 {
 } */
 
 .heading-app {
-    color: var(--primary-color);
-    font-weight: bold;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
 }
 
 .link-weather_app {
@@ -252,6 +300,9 @@ img {
     .link {
         font-size: 14px;
         line-height: 1.2;
+    }
+    .email-link span {
+        font-size: 1.2rem;
     }
 }
 /* Contacts section */
