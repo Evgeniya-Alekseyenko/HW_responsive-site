@@ -1,16 +1,24 @@
+/* Variables and fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC:wght@400;600&family=PT+Sans&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC:wght@400;600&family=PT+Sans&family=Playfair+Display:wght@700&family=Poppins&display=swap');
+
 :root {
     --primary-color: #6c63ff;
     --secondary-color: #f5f2fe;
+    --p-color: rgba(39, 33, 66, 0.7);
     --hover-color: #f5f768;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     --links-color: purple;
+    --primary-font-family: 'Poppins';
+    --heading-font-family: 'Playfair Display';
 }
+
+/* Common styles for all blocks */
 
 body {
     margin: 60px auto;
-    max-width: 800px;
-    background: var(--secondary-color);
-    font-family: 'Roboto';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -20,15 +28,15 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Roboto';
     text-align: center;
     margin: 0;
 }
 
 h1 {
-    font-size: 96px;
-    font-style: normal;
+    font-family: var(--heading-font-family);
     font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
 }
 
 h2 {
@@ -38,20 +46,24 @@ h2 {
 h3 {
     font-size: 24px;
     margin: 10px 0 10px 0;
-    /* opacity: 0.7; */
 }
+
+.btn-branding {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 18px 31px;
+}
+
+.btn-branding:hover {
+    color: var(--hover-color);
+}
+/* Homepage section */
 
 .intro {
     margin: 160px 0;
-}
-
-p {
-    background: var(--secondary-color);
-    padding: 20px;
-    border-radius: 4px;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
 }
 
 .navigation-links {
@@ -80,7 +92,6 @@ p {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
     color: white;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -126,7 +137,7 @@ p {
     text-decoration: underline;
 }
 
-.btn {
+/* .btn {
     background: var(--primary-color);
     box-shadow: 5px 3px 3px var(--primary-color);
     min-width: 250px;
@@ -135,12 +146,12 @@ p {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
     color: var(--hover-color);
     background: var(--primary-color);
-}
+} */
 
 .heading-app {
     color: var(--primary-color);
@@ -162,8 +173,43 @@ p {
     font-style: italic;
 }
 
+/* About me section */
+
 .header-about {
-    margin-bottom: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+.header-about h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+}
+
+.header-about h2 {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.header-about p {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--p-color);
+}
+
+.about-section-content {
+    margin: 30px;
+}
+
+.carousel {
+    max-width: 900px;
+    margin: 10px auto;
 }
 
 .photo {
@@ -190,8 +236,8 @@ img {
         font-size: 1.4rem;
     }
     .header-about h1 {
-        margin: 5rem 0 2rem 0;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
+        line-height: 60px;
     }
     .header-home {
         margin: 8rem 0 2rem 0;
@@ -208,6 +254,7 @@ img {
         line-height: 1.2;
     }
 }
+/* Contacts section */
 
 .fa-instagram,
 .fa-twitter,
@@ -217,7 +264,7 @@ img {
 }
 
 .container-contact {
-    background-image: url(images/bg-contact.jpg);
+    background: url(images/bg-contact.jpg) no-repeat center center fixed;
     background-color: transparent;
     background-size: cover;
 }
