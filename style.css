@@ -311,11 +311,11 @@ img {
     font-size: 36px;
 }
 
-.container-contact {
+/* .container-contact {
     background: url(images/bg-contact.jpg) no-repeat center center fixed;
     background-color: transparent;
     background-size: cover;
-}
+} */
 
 .contact-links {
     display: flex;
