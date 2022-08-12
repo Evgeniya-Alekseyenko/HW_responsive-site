@@ -86,9 +86,6 @@ h3 {
     padding: 18px 31px;
 }
 
-/* .btn-branding:hover {
-    color: var(--hover-color);
-} */
 /* Homepage section */
 
 .intro {
@@ -140,7 +137,7 @@ h3 {
 .about-link {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -154,7 +151,7 @@ h3 {
 }
 
 .home-p {
-    font-family: 'Poppins';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -162,6 +159,10 @@ h3 {
     color: var(--p-color);
     padding: 0;
     /* text-align: center; */
+}
+
+.text-description {
+    padding: 120px 60px;
 }
 
 .homepage-link {
@@ -182,24 +183,8 @@ h3 {
     text-decoration: underline;
 }
 
-/* .btn {
-    background: var(--primary-color);
-    box-shadow: 5px 3px 3px var(--primary-color);
-    min-width: 250px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-} */
-
-/* .btn:hover {
-    color: var(--hover-color);
-    background: var(--primary-color);
-} */
-
 .heading-app {
-    font-family: 'Playfair Display';
+    font-family: var(--heading-font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -277,11 +262,17 @@ img {
 @media (min-width: 320px) and (max-width: 768px) {
     .header-name {
         margin: 2rem 0 2rem 0;
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .heading-home {
+        font-size: 18px;
+    }
+    .text-description {
+        padding: 5px;
     }
     #contact h2,
     span {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
     .header-about h1 {
         font-size: 1.9rem;
@@ -289,7 +280,7 @@ img {
     }
     .header-home {
         margin: 8rem 0 2rem 0;
-        font-size: 30px;
+        font-size: 25px;
     }
     .contacts {
         margin-top: 8rem;
@@ -303,6 +294,12 @@ img {
     }
     .email-link span {
         font-size: 1.2rem;
+    }
+    .navbar .container-fluid {
+        flex-wrap: nowrap;
+    }
+    .navbar-toggler {
+        margin-left: 10px;
     }
 }
 /* Contacts section */
@@ -334,4 +331,18 @@ img {
 
 .navbar-brand {
     margin-right: 0;
+}
+
+/* work section */
+.heading-work {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+.work-contacts {
+    background-color: var(--secondary-color);
+    padding: 20px;
 }
