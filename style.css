@@ -57,6 +57,10 @@ h3 {
     background-color: var(--secondary-color);
 }
 
+.nav-link active a {
+    color: var(--primary-color);
+}
+
 .collapse {
     justify-content: flex-end;
     margin-right: 50px;
