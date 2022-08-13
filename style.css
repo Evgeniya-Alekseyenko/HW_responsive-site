@@ -297,7 +297,7 @@ img {
         margin-left: 10px;
     }
     .navbar-brand {
-        font-size: 18px;
+        font-size: 16px;
     }
     .contact-header h1 {
         font-size: 28px;
@@ -311,6 +311,9 @@ img {
     .contact-links i {
         font-size: 18px;
         padding: 2px;
+    }
+    .github-link {
+        font-size: 16px;
     }
 }
 /* Contacts section */
