@@ -41,6 +41,7 @@ h1 {
 
 h2 {
     font-size: 48px;
+    line-height: 64px;
 }
 
 h3 {
@@ -62,19 +63,18 @@ h3 {
 }
 
 .btn-outlined {
-    background-color: #e5e5e5;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    border: 1px solid #6c63ff;
-    color: #6c63ff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     text-align: center;
     padding: 18px 31px;
     border-radius: 4px;
 }
 
 .btn-outlined a {
-    color: #6c63ff;
+    color: var(--primary-color);
 }
 
 .btn-branding {
@@ -86,10 +86,16 @@ h3 {
     padding: 18px 31px;
 }
 
+.contact-box {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
 /* Homepage section */
 
 .intro {
-    /* margin: 160px 0; */
     background-color: var(--secondary-color);
 }
 
@@ -118,7 +124,7 @@ h3 {
 .contact-link {
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
-    color: white;
+    color: #fff;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -137,7 +143,6 @@ h3 {
 .about-link {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -158,7 +163,6 @@ h3 {
     line-height: 30px;
     color: var(--p-color);
     padding: 0;
-    /* text-align: center; */
 }
 
 .text-description {
@@ -198,12 +202,6 @@ h3 {
 
 .link-weather_app:hover {
     color: var(--hover-color);
-}
-
-.footer:hover {
-    background-color: var(--hover-color);
-    opacity: 0.7;
-    font-style: italic;
 }
 
 /* About me section */
@@ -295,27 +293,46 @@ img {
     .email-link span {
         font-size: 1.2rem;
     }
-    .navbar .container-fluid {
-        flex-wrap: nowrap;
-    }
     .navbar-toggler {
         margin-left: 10px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+    .contact-header h1 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 35%;
+    }
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-links i {
+        font-size: 18px;
+        padding: 2px;
     }
 }
 /* Contacts section */
 
 .fa-instagram,
 .fa-twitter,
-.fa-telegram {
-    color: var(--links-color);
+.fa-telegram,
+.fa-github {
+    color: var(--primary-color);
     font-size: 36px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 150ms ease-in-out;
 }
-
-/* .container-contact {
-    background: url(images/bg-contact.jpg) no-repeat center center fixed;
-    background-color: transparent;
-    background-size: cover;
-} */
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-telegram:hover,
+.fa-github:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
 
 .contact-links {
     display: flex;
@@ -343,6 +360,5 @@ img {
     text-align: center;
 }
 .work-contacts {
-    background-color: var(--secondary-color);
     padding: 20px;
 }
