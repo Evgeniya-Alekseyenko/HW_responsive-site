@@ -57,8 +57,9 @@ h3 {
     background-color: var(--secondary-color);
 }
 
-.nav-link active a {
+.nav-link span {
     color: var(--primary-color);
+    font-weight: bold;
 }
 
 .collapse {
@@ -201,7 +202,7 @@ h3 {
 
 .link-weather_app {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 .link-weather_app:hover {
@@ -254,7 +255,7 @@ h3 {
 }
 
 img {
-    transition: transform 0.25s;
+    transition: transform 0.45s;
 }
 
 .photo:hover img {
@@ -319,7 +320,22 @@ img {
     .github-link {
         font-size: 16px;
     }
+    .sheCodes-logo {
+        width: 100px;
+    }
+    .custom-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0;
+    }
+    .custom-nav__list {
+        margin-left: 15px;
+    }
+    .custom-nav a {
+        font-size: 12px;
+    }
 }
+
 /* Contacts section */
 
 .fa-instagram,
@@ -337,7 +353,7 @@ img {
 .fa-twitter:hover,
 .fa-telegram:hover,
 .fa-github:hover {
-    color: white;
+    color: #fff;
     background-color: var(--primary-color);
 }
 
@@ -358,6 +374,7 @@ img {
 }
 
 /* work section */
+
 .heading-work {
     font-family: var(--primary-font-family);
     font-style: normal;
@@ -366,6 +383,57 @@ img {
     line-height: 36px;
     text-align: center;
 }
+
 .work-contacts {
     padding: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+/* custom navigation */
+
+.custom-nav {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.custom-nav ul {
+    padding: 0;
+}
+
+.custom-nav li {
+    display: inline;
+    margin-right: 5px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.custom-nav a {
+    text-decoration: none;
+    color: #272142;
+    opacity: 0.7;
+    transition: all 100ms ease-in-out;
+}
+
+.custom-nav a:hover,
+.custom-nav li.active a {
+    color: var(--primary-color);
+    opacity: 100%;
+    font-weight: bold;
+}
+
+.custom-nav__image {
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    padding: 40px;
 }
